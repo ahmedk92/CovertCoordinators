@@ -26,5 +26,30 @@ class RootViewController: UINavigationController {
                 }, animated: true)
             }
         ], animated: false)
+        
+        if shouldAuthenticate {
+            viewDidAppearQueue.append {
+                let authVC = AuthViewController()
+                self.authViewController = authVC
+                authVC.isModalInPresentation = true
+                self.present(authVC, animated: true)
+            }
+        }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        while !viewDidAppearQueue.isEmpty {
+            viewDidAppearQueue.removeFirst()()
+        }
+        
+        NotificationCenter.default.addObserver(forName: AUTHENTICATED_NOTIFICATION_NAME, object: nil, queue: nil) { [weak self] (_) in
+            self?.authViewController?.dismiss(animated: true)
+        }
+    }
+    
+    private var viewDidAppearQueue: [() -> Void] = []
+    private weak var authViewController: AuthViewController?
 }
+
+private let shouldAuthenticate = true

@@ -14,6 +14,9 @@
 		28469570248442A600783AE6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846956F248442A600783AE6 /* RootViewController.swift */; };
 		284695722484434600783AE6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284695712484434600783AE6 /* DashboardViewController.swift */; };
 		28469574248444D700783AE6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28469573248444D700783AE6 /* SettingsViewController.swift */; };
+		28469577248447CA00783AE6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28469576248447CA00783AE6 /* AuthViewController.swift */; };
+		28469579248447F600783AE6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28469578248447F600783AE6 /* SignInViewController.swift */; };
+		2846957B2484480D00783AE6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846957A2484480D00783AE6 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		2846956F248442A600783AE6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		284695712484434600783AE6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		28469573248444D700783AE6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		28469576248447CA00783AE6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		28469578248447F600783AE6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		2846957A2484480D00783AE6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				2846956F248442A600783AE6 /* RootViewController.swift */,
 				28469573248444D700783AE6 /* SettingsViewController.swift */,
 				28469556248441FB00783AE6 /* Assets.xcassets */,
+				28469575248447BB00783AE6 /* Auth */,
 				28469558248441FB00783AE6 /* LaunchScreen.storyboard */,
 			);
 			path = CovertCoordinators;
@@ -97,6 +104,16 @@
 				28469566248441FC00783AE6 /* Info.plist */,
 			);
 			path = CovertCoordinatorsTests;
+			sourceTree = "<group>";
+		};
+		28469575248447BB00783AE6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				28469576248447CA00783AE6 /* AuthViewController.swift */,
+				28469578248447F600783AE6 /* SignInViewController.swift */,
+				2846957A2484480D00783AE6 /* SignUpViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28469570248442A600783AE6 /* RootViewController.swift in Sources */,
+				2846957B2484480D00783AE6 /* SignUpViewController.swift in Sources */,
 				284695722484434600783AE6 /* DashboardViewController.swift in Sources */,
+				28469579248447F600783AE6 /* SignInViewController.swift in Sources */,
+				28469577248447CA00783AE6 /* AuthViewController.swift in Sources */,
 				2846954E248441F700783AE6 /* AppDelegate.swift in Sources */,
 				28469574248444D700783AE6 /* SettingsViewController.swift in Sources */,
 			);
